@@ -1,0 +1,42 @@
+name: RegionRestore
+main: me.Arcator.RegionRestore.Main
+description: Restores protected areas using custom data storage
+version: 1.1
+
+commands:
+  regionrestore:
+    aliases: [rr, regionres, rgrestore, regres]
+    usage: /<command> [list/tool/save/restore/delete]
+    
+permissions:
+  regionrestore.*:
+    description: Gives access to all Region Restore commands
+    children:
+      regionrestore.command: true
+      regionrestore.tool: true
+      regionrestore.save: true
+      regionrestore.list: true
+      regionrestore.delete: true
+      regionrestore.restore: true
+      regionrestore.bypass: true
+  regionrestore.command:
+    description: Allows a player to use command /regionrestore
+    default: op
+  regionrestore.tool:
+    description: Allows a player to use the selection tool
+    default: op
+  regionrestore.save:
+    description: Allows a player to save a region
+    default: op
+  regionrestore.list:
+    description: Allows a player to list all regions
+    default: op
+  regionrestore.delete:
+    description: Allows a player to delete a region
+    default: op
+  regionrestore.restore:
+    description: Allows a player to restore a region
+    default: op
+  regionrestore.bypass:
+    description: Allows a player to bypass protection of a region
+    default: op

@@ -1,0 +1,20 @@
+messages:
+  NoPermission: '&cYou do not have the permission %permission%'
+  OnlyPlayers: '&cOnly players may use this command.'
+  FileDoesNotExist: '&4Error: &cThe file %name%.yml does not exist.' 
+  NoDeleteConfig: '&cYou can not delete the config.yml'
+  SuccessfulSave: '&aRegion %name% saved successfully in %time%s'
+  UnsuccessfulSave: '&cRegion %name% saved unsuccessfully. Erorr printed in console.'
+  SuccessfulDeletion: '&a%name%.yml successfully deleted.'
+  BypassProtectionDisabled: '&cBypassing Protection has been disabled.'
+  RestoreSuccessful: '&aSuccessfully restored %name% from %name%.yml in %time%s'
+  EnablingBypassProtection: '&6Bypassing Protection: &aEnabled'
+  DisablingBypassProtection: '&6Bypassing Protection: &cDisabled'
+RegionOptions:
+  Protection: true
+  BlocksThatCanBeBroken: [BED_BLOCK]
+  RegionsDisabled: []
+  #The debug message will send you the name of a block after it is hit. This is to obtain the block name if unknown. 
+  DebugMessageBlockName: false
+  #Dependent on protection. If protection is false. TNT will be enabled anyways
+  TNTExplosions: false
